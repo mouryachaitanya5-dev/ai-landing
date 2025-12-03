@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Marketing Agency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">AI<span>Launch</span></div>
+      <nav class="nav">
+        <a href="#/">Home</a>
+        <a href="#/about">About</a>
+        <a href="#/contact">Contact</a>
+      </nav>
+      <button class="cta-button cta-small" onclick="location.hash = '#/contact'">
+        Book a Call NOW
+      </button>
+    </div>
+  </header>
+
+  <main id="app" class="site-main">
+    <!-- Pages will load here -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> AI Launch Agency. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#/about">About</a>
+        <a href="#/contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script type="module" src="./js/router.js"></script>
+</body>
+</html>
