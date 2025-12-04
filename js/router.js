@@ -1,11 +1,14 @@
 import { renderLanding } from "./pages/landing.js";
 import { renderAbout } from "./pages/about.js";
 import { renderContact } from "./pages/contact.js";
+import { renderLanding2 } from "./pages/landing2.js"; // <-- add this line
+
 
 const routes = {
   "/": renderLanding,
   "/about": renderAbout,
-  "/contact": renderContact
+  "/contact": renderContact,
+  "/v2": renderLanding2, // <-- new route
 };
 
 function navigate() {
